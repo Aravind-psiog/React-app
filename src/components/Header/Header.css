@@ -1,18 +1,18 @@
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #000000;
 }
 
 a {
-  color: #000;
+  color: rgb(177, 18, 18);
 }
 
 /* header */
 
 .header {
-  background-color: rgb(116, 190, 46);
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 4px 0 rgba(212, 212, 212, 0.1);
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -23,7 +23,7 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: rgb(116, 190, 46);
+  background-color: rgb(0, 0, 0);
 }
 
 .header li a {
@@ -35,7 +35,7 @@ a {
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #007710;
+  background-color: #000000;
 }
 
 .header .logo {
