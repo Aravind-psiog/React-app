@@ -16,14 +16,14 @@ const MovieTemplate = (props) => {
   const img1 = "url('" + `${img}` + "')";
 
   return (
-    <a class="card">
+    <a className="card">
       <div
-        class="card__background"
+        className="card__background"
         style={{ backgroundImage: `${img1}` }}
       ></div>
-      <div class="card__content">
-        <p class="card__category">{props.movies.release_date}</p>
-        <h3 class="card__heading">{props.movies.original_title}</h3>
+      <div className="card__content">
+        <p className="card__category">{props.movies.release_date}</p>
+        <h3 className="card__heading">{props.movies.original_title}</h3>
         <button onClick={buttonHandler}>{favourite}</button>
       </div>
     </a>
