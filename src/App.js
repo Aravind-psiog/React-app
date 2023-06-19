@@ -1,4 +1,12 @@
 import logo from "./logo.svg";
+import {
+  Typography,
+  Card,
+  CssBaseline,
+  Container,
+  AppBar,
+  Toolbar,
+} from "@mui/material";
 import axios from "axios";
 import ApiConfigs from "./components/Api/ApiConfigurations";
 import "./App.css";
@@ -8,6 +16,8 @@ import StaticData from "./components/MovieCard/StaticData";
 import MoviesApi from "./components/Api/MovieApi";
 import SearchBarTemplate from "./components/SearchBar/SearchBar";
 import React, { useState, useEffect } from "react";
+import LocalMoviesRoundedIcon from "@mui/icons-material/LocalMoviesRounded";
+import Button from "@mui/material/Button";
 
 const api = axios.create({
   baseURL: ApiConfigs.baseURL,
@@ -19,6 +29,15 @@ const api = axios.create({
 function App() {
   return (
     <div className="App">
+      <AppBar position="relative">
+        <Toolbar>
+          <LocalMoviesRoundedIcon />
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            MMDB
+          </Typography>
+          <Button color="inherit">Login</Button>
+        </Toolbar>
+      </AppBar>
       <HeaderTemplate></HeaderTemplate>
       <SearchBarTemplate />
       <section className="hero-section">

@@ -1,0 +1,1 @@
+import Style from '../Pagenation/Pagenation.css';
